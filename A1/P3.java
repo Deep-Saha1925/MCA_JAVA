@@ -1,13 +1,13 @@
 public class P3{
 
-    void fibo(int n){
+    void fibo(){
         int a = 0, b = 1, c = 0, count = 0;
-        for(int i=1; i<=n; i++){
-            if(isPrime(a) && count < 8){
-                System.out.print(a + ", ");
+            while(count < 8){
+            c = a + b;
+            if(isPrime(c)){
+                System.out.print(c + ", ");
                 count++;
             }
-            c = a + b;
             a = b;
             b = c;
         }
@@ -24,9 +24,8 @@ public class P3{
 
     public static void main(String args[]){
         P3 obj = new P3();
-        int n = 100;
 
-        obj.fibo(n);
+        obj.fibo();
         
         // for(int i=2; c <= 8; i++, c++){
         //     int f = obj.fibo(i);
