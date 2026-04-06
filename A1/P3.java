@@ -26,13 +26,5 @@ public class P3{
         P3 obj = new P3();
 
         obj.fibo();
-        
-        // for(int i=2; c <= 8; i++, c++){
-        //     int f = obj.fibo(i);
-        //     if(obj.isPrime(f))
-        //         System.out.print(i + ", ");
-        // }
-
-
     }
 }
