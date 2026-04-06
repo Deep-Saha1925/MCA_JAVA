@@ -1,6 +1,6 @@
 public class P1{
 
-    static void fibo(int n){
+    void fibo(int n){
         int a = 0, b = 1, c = 0;
         for(int i=1; i<=n; i++){
             System.out.print(a + ", ");
@@ -12,6 +12,7 @@ public class P1{
 
     public static void main(String args[]){
         int n = 10;
-        fibo(n);
+        P1 obj = new P1();
+        obj.fibo(n);
     }
 }
