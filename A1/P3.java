@@ -24,7 +24,7 @@ public class P3{
 
     public static void main(String args[]){
         P3 obj = new P3();
-
-        obj.fibo();
+        int n = 10;
+        obj.fibo(n);
     }
 }
