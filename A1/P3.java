@@ -1,6 +1,6 @@
 public class P3{
 
-    void fibo(){
+    void fibo(int n){
         int a = 0, b = 1, c = 0, count = 0;
             while(count < 8){
             c = a + b;
