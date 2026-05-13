@@ -1,10 +1,12 @@
 import java.util.Scanner;
 class ExtractDomain{
     public void extract(String url){
-        int firstIdx = url.indexOf(".");
-        String slicedStr = url.substring(firstIdx);
-        int lastIdx = slicedStr.indexOf('/')+firstIdx;
-        System.out.println("DOMAIN: " +url.substring(firstIdx+1, lastIdx));
+        // int firstIdx = url.indexOf(".");
+        // String slicedStr = url.substring(firstIdx);
+        // int lastIdx = slicedStr.indexOf('/')+firstIdx;
+
+        String domain = url.split("/")[2];
+        System.out.println("DOMAIN: " + domain.substring(domain.indexOf('.')+1));
     }
 }
 
