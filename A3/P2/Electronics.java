@@ -1,15 +1,15 @@
 class Electronics extends Product {
-    private int warrentyPeriod;
-    public Electronics(String name, double price, int warrentyPeriod) {
+    private String warrentyPeriod;
+    public Electronics(String name, double price, String warrentyPeriod) {
         super(name, price);
         this.warrentyPeriod = warrentyPeriod;
     }
 
-    public void setWarrentyPeriod(int warrentyPeriod) {
+    public void setWarrentyPeriod(String warrentyPeriod) {
         this.warrentyPeriod = warrentyPeriod;
     }
 
-    public int getWarrentyPeriod() {
+    public String getWarrentyPeriod() {
         return warrentyPeriod;
     }
 
