@@ -1,3 +1,4 @@
+import travel.bookings.Booking;
 import travel.flights.Flight;
 import travel.hotels.Hotel;
 
