@@ -1,5 +1,3 @@
-package A3.P8;
-
 class Product {
     String name;
     int stock;
