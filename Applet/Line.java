@@ -8,5 +8,8 @@ public class Line extends Applet{
 
         // Rectangle
         g.drawRect(30, 30, 150, 200);
+
+        // Circle
+        g.drawOval(50, 50, 200, 50);
     }
 }
