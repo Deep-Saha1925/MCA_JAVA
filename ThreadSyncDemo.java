@@ -3,13 +3,17 @@ public class ThreadSyncDemo {
     public static void main(String[] args) throws InterruptedException {
         // Thread AOne: increments x
         Thread AOne = new Thread(() -> {
+            synchronized (ThreadSyncDemo.class) {  // prevent race condition
                 x++;
                 System.out.println("AOne: x = " + x);
+            }
         }, "AOne");
         // Thread ATwo: decrements x
         Thread ATwo = new Thread(() -> {
+            synchronized (ThreadSyncDemo.class) {  // same lock object
                 x--;
                 System.out.println("ATwo: x = " + x);
+            }
         }, "ATwo");
         AOne.start();
         AOne.join();    // prevent orphan thread — wait for AOne
