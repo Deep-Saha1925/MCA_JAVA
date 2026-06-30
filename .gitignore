@@ -1,4 +1,4 @@
-node_modules/
+ButtonDemonode_modules/
 .env
 .DS_Store
 *.log
